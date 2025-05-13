@@ -1,0 +1,92 @@
+cd /media/$USER/VBOX_GAs*
+cd /media/$USER/VBox_Gas* sudo ./VBoxLinuxAdditions.run
+cd/media/$USER/VBox_GAs*
+cat ~/.ssh/id_ed25519.pub
+cd
+mkdir repogit
+cd repogit
+git clone git@github.com:TU_USUARIO/TP_AySO.git
+cd TP_AySO
+git clone git@github.com:Muraxito/TP_AySO.git
+sudo apt install git
+git clone git@github.com:Muraxito/TP_AySO.git}
+git clone git@github.com:Muraxito/TP_AySO.git
+ls ~/.ssh
+cat ~/ssh/id_ed25519.pub
+sudo apt update
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+sudo sh /media/$USER/VBox_GAs*/VBoxLinuxAdditions.run
+sudo reboot
+lsmod 
+lsmod | grep vboxguest
+cat ~/.ssh/*.pub
+cd repogit
+git clone git@github.com:Muraxito/TP_AySO1.git}
+git clone git@github.com:Muraxito/TP_AySO1.git
+cd TP_AySO1
+pwd
+ls -1
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url /etc/os-release
+grep -i home_url /etc/os-release > datos_url.txt
+[200~cat datos_url.txt
+cat datos_url.txt
+ls
+git add datos_url.txt
+git commit -m "Punto 2: uso de grep para obtener HOME_URL desde /etc/os-release, salida guardada en datos_url.txt"
+git config --global user.email "murabitosebastian9@gmail.com"
+git config --global user.name "Sebastian Murabito"
+git commit -m "Punto 2: uso de grep para obtener HOME_URL desde /etc/os-release, salida guardada en datos_url.txt"
+git log --oneline
+git push
+grep HOME_URL /etc/os-release
+grep HOME_URL /etc/os-release | cut -d'"' -f2
+grep HOME_URL /etc/os-release | cut -d'"' -f2 > solo_url.txt
+cat solo_url.txt
+git add solo_url.txt
+git commit -m "Punto 3: extracción de solo la URL desde HOME_URL y guardado en solo_url.txt"
+git push
+[200~curl -o /dev/null -s -w "%{http_code}\n" https://www.ubuntu.com/ > respuesta_url.txt
+~cat solo_url.txt
+cat solo_url.txt
+curl -o /dev/null -s -w "%{http_code}\n" https://www.ubuntu.com/ > respuesta_url.txt
+curl -o /dev/null -s -w "%{http_code}\n" "$(cat solo_url.txt)" > respuesta_url.txt
+cat respuesta_url.txt
+sudo apt update
+sudo apt insatll curl
+sudo apt install curl
+curl -o /dev/null -s -w "%{http_code}\n" "$(cat solo_url.txt)" > respuesta_url.txt
+cat respuesta_url.txt
+git add respuesta_url.txt
+git commit -m "Punto 4: verificación de actividad de la URL con curl, guardado en respuesta_url.txt"
+git push
+curl -I "$(cat solo_url.txt)" > encabezado_url.txt
+cat encabezado_url.txt
+git add encabezado_url.txt
+git commit -m "Punto 5: obtención del encabezado HTTP con curl, guardado en encabezado_url.txt"
+git push
+head -n 1 encabezado_url.txt | cut -d' ' -f2 > codigo_http.txt
+cat codigo_http.txt
+git add codigo_http.txt
+git commit -m "Punto 6: extracción del código HTTP 301 del encabezado y guardado en codigo_http.txt"
+git push
+cat codigo_http.txt encabezado_url.txt > encabezado_completo.txt
+cat encabezado_completo.txt
+git add encabezado_completo.txt
+git commit -m "Punto 7: encabezado completo con código HTTP y encabezado, guardado en encabezado_completo.txt"
+git push
+echo "Usuario=$(whoami)" > datos_usuario.txt
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+Usuario=muraxito
+model name : Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz
+echo -e "\nAlumno: Sebastián Murabito\nDivisión:115 X\nTurno: Mañana" >> README.md
+echo '#!/bin/bash' > script_dir.sh
+echo 'mkdir -p $HOME/Ejercicio/A' >> script_dir.sh
+echo 'mkdir -p $HOME/Ejercicio/B/B1' >> script_dir.sh
+echo 'mkdir -p $HOME/Ejercicio/B/B2' >> script_dir.sh
+echo 'mkdir -p $HOME/Ejercicio/C' >> script_dir.sh
+chmod +x script_dir.sh
+history -a
